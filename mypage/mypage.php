@@ -132,6 +132,10 @@ $result3 = mysqli_query($conn, $sql3);
                                     $sql4="SELECT *,count(o_id) from order_detail  join product on order_detail.p_id= product.p_id where o_id = '".$o_row['o_id']."' group by o_id ";
                                     $result4 = mysqli_query($conn, $sql4);
                                     $detail_row =  mysqli_fetch_array($result4);
+
+                                    $s_sql="SELECT sum(o_price) as sum_o_price from order_detail where o_id = '".$o_row['o_id']."'"; 
+                                    $s_result= mysqli_query($conn, $s_sql);
+                                    $s_row =  mysqli_fetch_array($s_result);
                                     ?>
                                     <li><img class="img_box" src="<?php echo ".".$detail_row['img_path'].$detail_row['p_id']?>.jpg" alt=""></li>
                                     <li>
@@ -142,7 +146,7 @@ $result3 = mysqli_query($conn, $sql3);
                                                 <span class="space-left">외 <?php echo $detail_row['count(o_id)']-1;?>건</span>
                                             <?php }?>
                                         </li>
-                                            <li><?php echo $detail_row['o_price']."원";?></li>
+                                            <li><?php echo $s_row['sum_o_price']."원";?></li>
                                         </ul>
                                     </li>
                                 </ul>
