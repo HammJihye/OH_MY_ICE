@@ -1,0 +1,369 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+  }
+
+input[type="submit"] {font-family : FontAwesome;}
+
+.wrap {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #EAEAEA;
+  }
+
+.titleText1{
+    font-size: 2em;
+}
+.titleText2{
+  float: left;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+.text1 {
+  margin-bottom: 20px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 1.1em;
+}
+#id_check{
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+.header {
+  width: 100%;
+  height: 160px;
+  background-color: white;
+  padding-top: 10px;
+  border-bottom : 2px solid #eaeaea;
+}
+
+.top{
+  display: flex;
+  width: 1440px;
+  /*height: 86px;*/
+  height: 80px;
+  margin: auto;
+}
+
+.logo_image {
+  width: 300px;
+  margin-top: 15px;
+}
+
+/*이부분*/
+.logo_nav {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 86px;
+  width: calc(1440px - 300px);
+}
+
+.logo_nav > li:not(:last-child) {
+  margin-right: 75px;
+}
+
+.logo_nav > li> a{
+  color: black;
+}
+.logo_text{
+  font-size: 48px;
+ font-family: 'Gemunu Libre', sans-serif;
+}
+.ice_text{
+  font-size: 48px;
+ color: #AFE1FF;
+ font-family: 'Gemunu Libre', sans-serif;
+}
+.search {
+  width: 40px;
+  height: 60px;
+  padding-top : 15px;
+  margin: auto;
+}
+.search-box{
+  float:right;
+  padding: 10px;
+  height: 30px;
+  background-color: #fff;
+  transition: 0.4s;
+  width:30px;
+}
+.search-box:hover{
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 0px 0px .5px 1px black;
+  width: 282px;
+}
+.search-btn{
+  text-decoration: none;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.search-box:hover > .search-btn{
+  background-color: #fff;
+}
+.search-txt{
+  display: flex;
+  padding: 0;
+  width: 0px;
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  font-size: 1rem;
+  line-height: 30px;
+  transition: .4s;
+}
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+}
+hr {
+  margin-top: 23px;
+  border : 1px solid #eaeaea;
+  border-bottom: 0px;
+}
+
+#dropdown_menu {	
+  width: 100%;
+margin : 120px auto;
+background:linear-gradient(white 50px, rgba(255,255,255,0.8) 50px, rgba(255,255,255,0.8) );
+  height:50px;
+  overflow:hidden;
+position:absolute;
+left:0; right:0;
+top:0;
+  text-align: center;
+  border-top : 1px solid #eaeaea;
+}
+
+.clearfix:after{
+  content:'';
+  display:block; 
+  clear:both;
+}
+
+
+nav {
+  display:inline-block;
+  margin:0 auto;
+}
+nav > ul > li {
+  float:left;
+  line-height:50px;
+  margin : 0 50px 0 50px;
+}
+
+nav > ul > li ul{ 
+  width:100%;
+}
+
+main p{
+margin-bottom:27px;
+}
+
+.main {
+    width: 1200px;
+    margin: 80px auto;
+}
+.mainContent {
+    width: 900px;
+    margin-bottom: 80px;
+    padding: 30px;
+    float: right;
+    background-color: white;
+  }
+
+.section {
+    width: 900px;
+    text-align: center;
+    background-color: white;
+}
+
+.icons {
+  display: block;
+  padding: 40px 0 20px 0;
+  margin : 30px auto;
+  width: 900px;
+  text-align: center;
+  border-top : 1px solid black;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.icons > ul  {
+  display: inline-block;
+}
+
+.icons > ul > li {
+  float : left;
+  margin-right: 50px;
+}
+
+.iconText > li {
+  margin-top: 20px;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 1.1em;
+}
+
+
+table{
+  height: 500px;
+  width: 900px;
+  border-top: 3px solid black;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+td{
+  border-bottom: 1px dotted black;
+}
+
+.col1 {
+  background-color: #e8e8e8;
+  padding: 10px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.col2 {
+  text-align: left;
+  padding: 5px;
+}
+
+.create{
+  width: 800px;
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
+.but1 {
+  height: 25px;
+  width: 80px;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.but2 {
+  height: 27px;
+  width: 120px;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.but3 {
+  height: 35px;
+  width: 150px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+  
+.but1:hover {
+  background-color: #b9b9b9;
+  color: black;
+  border: 2px solid black;
+  }
+
+.but2:hover {
+  background-color: #b9b9b9;
+  color: black;
+  border: 2px solid black;
+}
+
+.but3:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+  
+p{
+  margin-top: 5px;
+  font-size: 0.7em;
+}
+.a{
+  font-size: 0.7em;
+}
+  
+.num{
+  color: red;
+}
+
+.container {
+  width: 900px;
+  text-align: center;
+}
+
+.text_box{
+  margin-top: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 900px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.sidebar {
+    width: 220px;
+    float: left;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+  }
+.sidebar > ul {
+    width: 220px;
+    background-color: #4374D9;
+}
+.sidebar > ul > li {
+    padding: 20px;
+    border-bottom: 1px dotted white;
+}
+
+.sidebar > ul > li > a{
+  display: block;
+}
+.sidebar_logo_wrap{
+  margin:auto;
+  padding:40px 0 40px 0;
+  width: 210px;
+}
+
+.imgbox {
+    margin-top: 10px;
+}
+
+.sidebarlist:hover {
+    background-color: red;/*색 정해서 색 바꾸기*/
+}
+.footer{
+    clear: both;
+    display: flex;
+    width: 1458px;
+    background: white;
+    padding:30px;
+  }
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: #000;
+  }
+  .footer > div:last-child {
+    flex:9;
+    color: #000;
+  }

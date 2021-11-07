@@ -1,0 +1,119 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.intro {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.header{
+    display: flex;
+    width: 1440px;
+    height: 86px;
+    margin: auto;
+}
+
+.logo_area {
+    width: 300px;
+    margin-top: 15px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: calc(1440px - 300px);
+}
+
+.nav > li {
+    margin-left: 84px;
+}
+
+.nav > li> a{
+    color: black;
+}
+
+
+.main_text0 {
+    width: 100%;
+    height: 601px;
+    /*background-color: #F6F6F6;*/
+}
+
+.main_text0 > h1 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main_text0 > .contents1 {
+    text-align: center;
+}
+.main_text0 > .contents2 {
+    padding-top: 10px;
+    width: 1280px;
+    margin: auto;
+    text-align: right;
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+}
+
+.icons > li {
+    flex: 1;
+    height: 302px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.icons > li:not(:last-child) {
+    margin-right: 20px;
+}
+.icons > a {
+    text-align: right;
+}
+.icons > li > a > img {
+    padding-left: 66px;
+}
+.footer{
+    display: flex;
+    background: #FFD9FA;
+    padding:30px;
+  }
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: #000;
+  }
+  .footer > div:last-child {
+    flex:9;
+    color: #000;
+  }
+  
